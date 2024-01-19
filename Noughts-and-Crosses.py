@@ -12,11 +12,12 @@ def choose_location():
     while True:
         print("\nWhich row do you want to fill in?")
         row_number = int(input(">>> ")) - 1
-        if (row_number not in [0, 1, 2]):
+        if (row_number not in ["1", "2", "3"]):
             input("Not a row. Press enter to continue:\n>>> ")
             print("\n\n\n\n")
             continue
         else:
+            row_number = int(row_number) - 1
             break
 
     while True:
