@@ -11,7 +11,7 @@ def print_grid(grid):
 def choose_location():
     while True:
         print("\nWhich row do you want to fill in?")
-        row_number = int(input(">>> ")) - 1
+        row_number = input(">>> ")
         if (row_number not in ["1", "2", "3"]):
             input("Not a row. Press enter to continue:\n>>> ")
             print("\n\n\n\n")
